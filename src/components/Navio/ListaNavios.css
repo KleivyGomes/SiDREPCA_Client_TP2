@@ -1,0 +1,12 @@
+.lista_box{
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #555555;
+}
+h2{
+    text-align: justify;
+    margin: 2%;
+    color: black;
+    text-shadow: 2px 2px blue;
+}
