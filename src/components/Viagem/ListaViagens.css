@@ -11,3 +11,13 @@ h2{
     color: black;
     text-shadow: 2px 2px blue;
 }
+
+.btn_addUser{
+    width: 90%;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 2%;
+}

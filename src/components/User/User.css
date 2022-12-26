@@ -59,6 +59,9 @@
     font-size: 22px;
     color: white;
 }
+.btn_delete:active{
+    background-color: orange;
+}
 .btn_update{
     width: 90%;
     background-color: blue;
@@ -66,4 +69,7 @@
     border-radius: 15px;
     font-size: 22px;
     color: white;
+}
+.btn_update:active{
+    background-color: green;
 }

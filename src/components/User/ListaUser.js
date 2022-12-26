@@ -1,11 +1,12 @@
 import './ListaUser.css'
 import User from './User'
 import { useState, useEffect } from 'react';
-function ListaUser() {
-    const [infos, setInfos] = useState([]);
 
+const ListaUser= () => {
+    const [infos, setInfos] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8080/user')
+        
+        fetch(`http://localhost:8080/user/AccessKeyCorret`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);

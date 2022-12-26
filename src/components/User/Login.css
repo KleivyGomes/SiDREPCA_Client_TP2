@@ -3,13 +3,14 @@
     border-radius: 15px;
     width: 45%;
     background-color: #555555;
+    margin-top: 7%;
 }
 .credenciais{
     text-align: justify;
     margin: 5%;
     width: 90%;
 }
-input{
+input.login{
     width: 90%;
     font-size: 20px;
     margin: 2px;

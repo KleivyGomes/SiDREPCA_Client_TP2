@@ -1,13 +1,11 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import ListaUser from './components/Viagem/ListaViagens'
+import Routes from './Routes/Routes'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar/>
-        <ListaUser />
+        <Routes/>
       </header>
     </div>
   );

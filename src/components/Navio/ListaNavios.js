@@ -3,12 +3,10 @@ import Navio from './Navio'
 import { useState, useEffect } from 'react';
 function ListaNavios(){
     const [infos, setInfos] = useState([]);
-
     useEffect(() => {
-        fetch('http://localhost:8080/navio')
+        fetch(`http://localhost:8080/navio/AccessAgenteKeyCorret`)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 setInfos(data);
             })
             .catch((err) => {
@@ -22,6 +20,7 @@ function ListaNavios(){
             {navios.map((navios, index)=> <Navio key = {index} imo = {navios.imo} nome={navios.nome} 
             tipo={navios.tipo} maxcarga={navios.maxcarga} maxpassageiros ={navios.maxpassageiros}
             proprietario={navios.proprietario}></Navio>)}
+            <a href='/CU_Navios'><button className='btn_addUser'>ADICIONAR NAVIO</button></a>
         </div>
     )
 }
